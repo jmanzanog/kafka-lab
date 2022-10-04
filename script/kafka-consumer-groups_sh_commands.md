@@ -5,4 +5,4 @@ kafka-consumer-groups.sh  --bootstrap-server 127.0.0.1:9092 --list // list consu
 
  kafka-consumer-groups.sh  --bootstrap-server 127.0.0.1:9092 --group consumer-group1 --reset-offsets --to-earliest --execute --all-topics // this will be reset the offset, thats means all messaessage will appears as not readed
 
- kafka-consumer-groups.sh  --bootstrap-server 127.0.0.1:9092 --group consumer-group1 --reset-offsets --shift-by -2 --execute --all-topics // it will be apply 
+ kafka-consumer-groups.sh  --bootstrap-server 127.0.0.1:9092 --group consumer-group1 --reset-offsets --shift-by -2 --execute --all-topics // it will be apply last behavior but only 2 offsets
