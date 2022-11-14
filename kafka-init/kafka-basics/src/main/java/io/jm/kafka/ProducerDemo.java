@@ -23,6 +23,7 @@ public class ProducerDemo {
         properties.setProperty(KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         properties.setProperty(VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
 
+
         // instance a producer and a record  to sent to kafka
         try (KafkaProducer<String, String> producer = new KafkaProducer<>(properties)) {
             ProducerRecord<String, String> record = new ProducerRecord<>("Demo_Java_Topic", "Key001", "Value001");
