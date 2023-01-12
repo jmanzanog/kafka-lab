@@ -19,7 +19,7 @@ import static org.apache.kafka.clients.producer.ProducerConfig.LINGER_MS_CONFIG;
 import static org.apache.kafka.clients.producer.ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG;
 
 public class WikimediaChangesProducer {
-    private Logger log = LoggerFactory.getLogger(WikimediaChangesProducer.class.getSimpleName());
+    private final Logger log = LoggerFactory.getLogger(WikimediaChangesProducer.class.getSimpleName());
 
     public static void main(String[] args) throws URISyntaxException, InterruptedException {
         // configure kafka producer properties

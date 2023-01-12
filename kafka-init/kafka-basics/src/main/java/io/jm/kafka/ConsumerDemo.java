@@ -35,7 +35,7 @@ public class ConsumerDemo {
         KafkaConsumer<String, String> consumer = new KafkaConsumer<>(properties.get());
 
         // subscribe consumer to topic
-        consumer.subscribe(Collections.singletonList("Demo_Java_Topic"));
+        consumer.subscribe(Collections.singletonList("wikimedia.recent-change"));
 
         // poll for new data
 
